@@ -3,16 +3,21 @@ package com.ddup.quartz;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.quartz.JobDetail;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"classpath:spring-context.xml", "classpath:spring-quartz.xml"})
 public class TellTimeQuartzTest {
+	
+	@Autowired
+	private TellTimeQuartz tellTimeQuartz;
 
     @Test
     public void main(){
         System.out.println("Start");
+        
         
         /*// define the job and tie it to our MyJob class
         JobDetail job = newJob(MyJob.class)

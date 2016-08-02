@@ -18,7 +18,7 @@ import org.quartz.JobExecutionException;
  * @author 
  * <ul>
  * <li></li>
- * <li>alanzhang 2016年8月2日<br></li>
+ * <li>alanzhang 2016年8月3日<br></li>
  * </ul><br>
  */
 public class TellTimeQuartz implements Job {

@@ -12,7 +12,7 @@ import org.quartz.JobExecutionException;
  * <p>XXX</p>
  * <ul><li></li></ul>
  * <br>
- * <strong>Copyright</strong> ©2013-2016 Lagou.com LLC. All Rights Reserved.<br>
+ * <strong>Copyright</strong> 漏2013-2016 Lagou.com LLC. All Rights Reserved.<br>
  *
  * @version 1.0.0
  * @author 
@@ -20,6 +20,10 @@ import org.quartz.JobExecutionException;
  * <li></li>
  * <li>alanzhang 2016年8月3日<br></li>
  * </ul><br>
+ */
+/**
+ * @author 30459
+ *
  */
 public class TellTimeQuartz implements Job {
 

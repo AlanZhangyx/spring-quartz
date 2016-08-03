@@ -18,6 +18,7 @@ public class TellTimeQuartzTest {
     public void main(){
         System.out.println("Start");
         
+        
         /*// define the job and tie it to our MyJob class
         JobDetail job = newJob(MyJob.class)
             .withIdentity("job1", "group1")

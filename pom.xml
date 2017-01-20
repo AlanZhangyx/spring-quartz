@@ -35,10 +35,11 @@
 			<artifactId>quartz</artifactId>
 			<version>${quartz.version}</version>
 		</dependency>
-		
+
 	</dependencies>
 
 	<build>
+		<outputDirectory>${basedir}/src/main/webapp/WEB-INF/classes</outputDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -47,6 +48,13 @@
 				<configuration>
 					<source>${java.version}</source>
 					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<webappDirectory>${basedir}/src/main/webapp</webappDirectory>
 				</configuration>
 			</plugin>
 		</plugins>
